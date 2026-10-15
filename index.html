@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>MADHOUSE — Good People. Good Music. Good Vibes. | Penang</title>
+  <meta name="description" content="MADHOUSE is a student house party concept in Penang, Malaysia: Afrobeat, Amapiano, Shatta, games, karaoke and new connections. USM students can pre-register their interest.">
+  <meta name="theme-color" content="#014F2C">
+
+  <!-- Social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="MADHOUSE">
+  <meta property="og:title" content="MADHOUSE is coming — Penang">
+  <meta property="og:description" content="Good people. Good music. Good vibes. A new student experience is taking shape in Penang. USM students: get on the list.">
+  <meta property="og:image" content="assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/icon-180.png">
+
+  <link rel="preload" href="assets/fonts/anton-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/barlow-condensed-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Prépare les animations d'apparition avant le premier affichage (évite un clignotement).
+       Filet de sécurité : si script.js ne se charge pas, tout redevient visible. */
+    if (matchMedia('(prefers-reduced-motion: no-preference)').matches && 'IntersectionObserver' in window) {
+      document.documentElement.classList.add('js-motion');
+      setTimeout(function () { if (!window.MADHOUSE_READY) document.documentElement.classList.remove('js-motion'); }, 2500);
+    }
+  </script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#register">Skip to pre-registration</a>
+
+  <!-- Reusable brand marks (drawn to match the flyers) -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="star" viewBox="0 0 24 24">
+      <path d="M12 0c.9 7.4 4.6 11.1 12 12-7.4.9-11.1 4.6-12 12-.9-7.4-4.6-11.1-12-12C7.4 11.1 11.1 7.4 12 0z"/>
+    </symbol>
+    <symbol id="crown" viewBox="0 0 64 44">
+      <path d="M6 37 9.5 7.5 22 26 31.5 3 41.5 25.5 55 6.5 57.5 37" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M3 38.5c14-2.4 37-2.6 58.5-.6" fill="none" stroke="currentColor" stroke-width="3.6" stroke-linecap="round"/>
+      <path d="M10 30.5 9 21M54.5 28l1-9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".6"/>
+    </symbol>
+  </svg>
+
+  <main>
+    <!-- ============ A. HERO ============ -->
+    <header class="hero section-green" id="top">
+      <div class="palms" aria-hidden="true">
+        <span class="palm palm--tl"></span>
+        <span class="palm palm--tr"></span>
+        <span class="palm palm--bl"></span>
+      </div>
+
+      <div class="hero__inner">
+        <p class="ruled-label reveal">Penang, Malaysia</p>
+
+        <div class="hero__brand reveal">
+          <img class="logo" src="assets/logo-web.webp" width="480" height="480" alt="MADHOUSE logo">
+        </div>
+
+        <h1 class="hero__title" aria-label="MADHOUSE is coming.">
+          <span class="hero__word hero__word--mad reveal" aria-hidden="true">
+            <span class="halftone" data-text="MAD">MAD</span>
+            <svg class="hero__crown"><use href="#crown"/></svg>
+          </span>
+          <span class="hero__word hero__word--house reveal" aria-hidden="true">
+            <span class="halftone" data-text="HOUSE">HOUSE</span>
+          </span>
+          <span class="tape reveal" aria-hidden="true">IS COMING.</span>
+          <svg class="hero__star reveal" aria-hidden="true"><use href="#star"/></svg>
+        </h1>
+
+        <p class="hero__slogan reveal">
+          <span>Good people.</span>
+          <span>Good music.</span>
+          <span>Good vibes.</span>
+        </p>
+
+        <p class="hero__lead reveal">A new student experience is taking shape in Penang.</p>
+
+        <a class="btn reveal" href="#register">
+          Get on the list
+          <span class="btn__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <figure class="hero__photo reveal">
+          <img src="assets/flyer-4.webp" width="800" height="1200"
+               alt="A group of friends in sunglasses laughing and dancing at a MADHOUSE house party">
+        </figure>
+      </div>
+    </header>
+
+    <!-- Band -->
+    <div class="band" aria-hidden="true">
+      <div class="band__track">
+        <span>Good people</span><svg><use href="#star"/></svg>
+        <span>Good music</span><svg><use href="#star"/></svg>
+        <span>Good vibes</span><svg><use href="#star"/></svg>
+        <span>Penang</span><svg><use href="#star"/></svg>
+        <span>Good people</span><svg><use href="#star"/></svg>
+        <span>Good music</span><svg><use href="#star"/></svg>
+        <span>Good vibes</span><svg><use href="#star"/></svg>
+        <span>Penang</span><svg><use href="#star"/></svg>
+      </div>
+    </div>
+
+    <!-- ============ B. WHAT IS MADHOUSE ============ -->
+    <section class="about section-deep" aria-labelledby="about-title">
+      <div class="container">
+        <p class="ruled-label reveal">The concept</p>
+        <h2 class="display reveal" id="about-title">What is <span class="nowrap">Madhouse?</span></h2>
+        <div class="about__text reveal">
+          <p>MADHOUSE brings students together through music, games and unforgettable moments.</p>
+          <p>It’s about meeting new people, sharing good energy and creating memories.</p>
+        </div>
+
+        <ul class="pillars" role="list">
+          <li class="pillar reveal"><span class="pillar__num">01</span><span class="pillar__word">Music</span></li>
+          <li class="pillar reveal"><span class="pillar__num">02</span><span class="pillar__word">Games</span></li>
+          <li class="pillar reveal"><span class="pillar__num">03</span><span class="pillar__word">Connections</span></li>
+          <li class="pillar reveal"><span class="pillar__num">04</span><span class="pillar__word">Good vibes</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ C. THE EXPERIENCE ============ -->
+    <section class="experience section-green" aria-labelledby="exp-title">
+      <div class="palms" aria-hidden="true">
+        <span class="palm palm--br"></span>
+      </div>
+      <div class="container experience__grid">
+        <div class="experience__copy">
+          <p class="ruled-label reveal">The experience</p>
+          <h2 class="display reveal" id="exp-title">More than <br>a party.</h2>
+          <p class="experience__intro reveal">The MADHOUSE spirit, in four lines:</p>
+
+          <ol class="vibes" role="list">
+            <li class="reveal"><strong>Afrobeat, Amapiano &amp; Shatta</strong><span>The sounds we live for.</span></li>
+            <li class="reveal"><strong>Games &amp; karaoke</strong><span>Break the ice, grab the mic.</span></li>
+            <li class="reveal"><strong>Meet new people</strong><span>Come solo, leave with a crew.</span></li>
+            <li class="reveal"><strong>A welcoming student community</strong><span>Locals and internationals, all welcome.</span></li>
+          </ol>
+
+          <p class="fineprint reveal">
+            This is the concept, not a final programme. The exact line-up of activities will depend on the venue and the organisation, and will be shared with everyone on the list.
+          </p>
+        </div>
+
+        <div class="posters reveal" aria-label="Official MADHOUSE flyers" role="group">
+          <img class="poster poster--1" src="assets/flyer-1.webp" width="800" height="1200" loading="lazy" decoding="async"
+               alt="MADHOUSE flyer: two friends in red tropical shirts, “House Party”, date TBA, Penang">
+          <img class="poster poster--2" src="assets/flyer-2.webp" width="800" height="1200" loading="lazy" decoding="async"
+               alt="MADHOUSE flyer: two friends in red outfits and sunglasses, “House Party”, date TBA, Penang">
+          <img class="poster poster--3" src="assets/flyer-3.webp" width="800" height="1200" loading="lazy" decoding="async"
+               alt="MADHOUSE flyer: two friends laughing in sunglasses, “House Party”, date TBA, Penang">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ D. PRE-REGISTRATION ============ -->
+    <section class="register section-deep" id="register" aria-labelledby="register-title" tabindex="-1">
+      <div class="container register__grid">
+        <div class="register__intro">
+          <p class="ruled-label reveal">Pre-registration</p>
+          <h2 class="display reveal" id="register-title">Get on <br>the list.</h2>
+          <p class="register__lead reveal">Interested in MADHOUSE?</p>
+          <p class="reveal">Register your interest to receive updates about our upcoming event.</p>
+          <p class="register__usm reveal"><svg aria-hidden="true"><use href="#star"/></svg>This pre-registration is exclusively for USM students.</p>
+          <p class="notice reveal">
+            <strong>Important:</strong> a pre-registration is not a confirmed booking or a guarantee of admission. Date, venue and details will be announced later.
+          </p>
+        </div>
+
+        <div class="form-card reveal">
+          <!-- Form: validated in script.js, re-validated server-side in google-apps-script/Code.gs -->
+          <form id="register-form" class="form" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="firstName">First name</label>
+                <input id="firstName" name="firstName" type="text" autocomplete="given-name" required maxlength="50" aria-describedby="firstName-error">
+                <p class="field__error" id="firstName-error"></p>
+              </div>
+              <div class="field">
+                <label for="lastName">Last name</label>
+                <input id="lastName" name="lastName" type="text" autocomplete="family-name" required maxlength="50" aria-describedby="lastName-error">
+                <p class="field__error" id="lastName-error"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="email">USM student email address</label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" required maxlength="100"
+                     placeholder="name@student.usm.my" aria-describedby="email-hint email-error">
+              <p class="field__hint" id="email-hint">Use your official USM student email.</p>
+              <p class="field__error" id="email-error"></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Phone number (with country code)</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="20"
+                     placeholder="+60 12 345 6789" aria-describedby="phone-hint phone-error">
+              <p class="field__hint" id="phone-hint">Start with + and your country code, e.g. +60.</p>
+              <p class="field__error" id="phone-error"></p>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="studentId">USM student ID</label>
+                <input id="studentId" name="studentId" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" required maxlength="20" aria-describedby="studentId-error">
+                <p class="field__error" id="studentId-error"></p>
+              </div>
+              <div class="field">
+                <label for="campus">USM campus</label>
+                <div class="select">
+                  <select id="campus" name="campus" required aria-describedby="campus-error">
+                    <option value="" selected disabled>Select your campus</option>
+                    <option>Main Campus (Penang)</option>
+                    <option>Engineering Campus</option>
+                    <option>Health Campus</option>
+                    <option>Other USM Campus</option>
+                  </select>
+                </div>
+                <p class="field__error" id="campus-error"></p>
+              </div>
+            </div>
+
+            <!-- Honeypot: hidden from people, bots tend to fill it. Leave empty. -->
+            <div class="hp" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field field--check">
+              <input id="consent" name="consent" type="checkbox" required aria-describedby="consent-error">
+              <label for="consent">I agree that MADHOUSE may use my information to manage my pre-registration and contact me about this event. <a href="privacy.html">Privacy notice</a></label>
+              <p class="field__error" id="consent-error"></p>
+            </div>
+
+            <div class="form__summary" id="form-summary" role="alert" tabindex="-1" hidden></div>
+
+            <button class="btn btn--submit" type="submit" id="submit-btn">
+              <span class="btn__label">Register my interest</span>
+              <span class="btn__spinner" aria-hidden="true"></span>
+            </button>
+
+            <p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+
+          <!-- Shown ONLY after the backend confirms the row was saved -->
+          <div class="success" id="success" tabindex="-1" hidden>
+            <svg class="success__star" aria-hidden="true"><use href="#star"/></svg>
+            <h3 class="success__title" id="success-title">You’re on <br>the list!</h3>
+            <p class="success__already" id="success-already" hidden>You were already registered, so there is nothing more to do.</p>
+            <p>Thanks for registering your interest in MADHOUSE.</p>
+            <p>We’ll share more details about the event soon.</p>
+            <p>Follow us on Instagram to stay updated.</p>
+            <a class="btn" href="https://www.instagram.com/madhouse.penang/" target="_blank" rel="noopener">@madhouse.penang</a>
+            <p class="success__slogan">Good people. Good music. Good vibes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ E. FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img class="logo logo--footer" src="assets/logo-web.webp" width="480" height="480" alt="MADHOUSE logo" loading="lazy" decoding="async">
+      <p class="footer__name">MADHOUSE</p>
+      <p class="footer__slogan">Good people. Good music. Good vibes.</p>
+      <p class="footer__meta">Penang, Malaysia</p>
+      <p class="footer__meta">Instagram: <a href="https://www.instagram.com/madhouse.penang/" target="_blank" rel="noopener">@madhouse.penang</a></p>
+      <p class="footer__meta"><a href="privacy.html">Privacy notice</a></p>
+    </div>
+  </footer>
+</body>
+</html>
