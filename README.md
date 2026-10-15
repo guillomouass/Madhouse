@@ -245,5 +245,5 @@ GitHub Pages republie automatiquement en 1 à 2 minutes (pensez à recharger la 
 - [ ] **Domaine e-mail confirmé** (`student.usm.my`) dans `script.js` et `Code.gs`.
 - [ ] **Lien Instagram vérifié**.
 - [ ] Test de bout en bout réussi sur téléphone + ligne de test supprimée (sections E–F).
-- [ ] URL absolue de `og:image` dans `index.html` (section H.5).
+- [x] URL absolue de `og:image` dans `index.html` : fait (`https://guillomouass.github.io/Madhouse/assets/og-image.jpg`). À refaire si le nom du dépôt ou de l'adresse change.
 - [ ] (Recommandé) Originaux haute définition du logo et des flyers.
